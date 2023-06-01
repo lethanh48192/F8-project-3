@@ -37,6 +37,11 @@ a {
     /* identical to box height, or 167% */
     text-align: center;
     color: #ffffff;
+    transition: 0.5s;
+}
+.btn:hover {
+    transform: scale(0.9);
+    opacity: 0.9;
 }
 .line-clamp {
     display: -webkit-box;
@@ -313,4 +318,45 @@ a {
 }
 .works-item:hover .works-item__more {
     color: #2e80ce;
+}
+/* -----------------Feature----------------- */
+.feature {
+    margin-top: 85px;
+    padding: 85px 0;
+}
+.feature__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+.feature__media {
+    width: 48%;
+}
+.feature__image {
+    position: relative;
+    padding: 0 58px 121px 0;
+}
+.feature__img {
+    width: 512px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+    /* position: relative; */
+}
+.feature__img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 322px;
+    height: 370px;
+}
+.feature__content {
+    width: 40%;
+	
+}
+.feature__desc {
+    margin-top: 18px;
+}
+.feature__cta {
+    margin-top: 38px;
 }
