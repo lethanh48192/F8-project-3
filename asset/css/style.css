@@ -63,6 +63,31 @@ a {
     color: #575f66;
 }
 
+.control {
+    display: flex;
+
+    align-items: center;
+    column-gap: 18px;
+}
+.control__btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    background: #fff;
+    color: #575f66;
+    transition: 0.5s;
+}
+.control__btn:hover {
+    border-color: #2e80ce;
+    background: #2e80ce;
+    color: #fff;
+    cursor: pointer;
+}
+.control__next-icon {
+    rotate: 180deg;
+}
+
 /* -----------------Header----------------- */
 .header {
     padding-top: 30px;
@@ -420,26 +445,40 @@ a {
 }
 .member-control {
     margin-top: 38px;
-    display: flex;
     justify-content: center;
+}
+/* -----------------Install App----------------- */
+.install {
+    margin-top: 85px;
+    padding: 85px 0;
+}
+.install-inner {
+    display: flex;
     align-items: center;
-    column-gap: 18px;
-}
-.member-control__btn {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border: 1px solid #575f66;
-    background: #fff;
-    color: #575f66;
-    transition: 0.5s;
-}
-.member-control__btn:hover {
-    border-color: #2e80ce;
+    justify-content: space-between;
     background: #2e80ce;
-    color: #fff;
-    cursor: pointer;
+    border-radius: 4px;
+    padding: 0 70px;
 }
-.member-control__next-icon {
-    rotate: 180deg;
+.install__thumb {
+    display: block;
+    margin-top: -95px;
+    width: 284px;
+    height: 552px;
+}
+.install-content {
+    max-width: 586px;
+}
+.install__heading {
+    width: 489px;
+    color: #ffffff;
+}
+.install__desc {
+    margin-top: 18px;
+    color: #ffffff;
+}
+.install-cta {
+    display: flex;
+    margin-top: 38px;
+    column-gap: 28px;
 }
